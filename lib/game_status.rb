@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.find do |combo|
-    combo.find { |i| board[i] == "X"}
+    combo.find { |i| board[i] == "X" || "O"}
   end
 end
 
