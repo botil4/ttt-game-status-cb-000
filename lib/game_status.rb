@@ -20,7 +20,6 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     win = combo.find { |i| position_taken?(board, i) == "X"}
   end
-  win
 end
 
 def full?(board)
