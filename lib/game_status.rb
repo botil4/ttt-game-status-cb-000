@@ -18,11 +18,11 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 #  taken = board.select { |square| position_taken?(board, square) }
-  
+
 end
 
 def full?(board)
-  
+
 end
 
 def draw?(board)
