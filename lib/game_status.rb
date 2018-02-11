@@ -22,7 +22,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? { |square| "X" || "Y" }
+  board.all? { |square| square ? "X" : "Y" }
 end
 
 def draw?(board)
