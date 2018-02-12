@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.find do |combo|
     taken = combo.select { |i| board[i]}
-    taken.uniq.count == 1
+    taken.all? {|x| x == "X"}
   end
 end
 
