@@ -18,8 +18,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.find do |combo|
-    taken = combo.all? { |i| position_taken?(board, i)}
-    taken.all? {|n| board[n] == "X"} || taken.all? {|n| board[n] == "O"}
+    taken = combo.select { |i| position_taken?(board, i)}
+    taken.uniq.count == 1
   end
 end
 
